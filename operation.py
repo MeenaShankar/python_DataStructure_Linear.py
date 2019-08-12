@@ -10,17 +10,18 @@ class SSL:
         temp.nxt=self.head
         self.head.nxt=temp
     def DelAtBeg(self):
-        temp1=self.head
-        head.nxt=self.head
-        temp1.nxt=None
+        temp=self.head
+        self.head=self.head.nxt
+        temp=None
     def PrintList(self):
         temp1=self.head
         while temp1:
-            print(temp1,"==>",end="")
+            temp=self.nxt
+            '''print(temp1,"==>",end="")
             temp1=temp1.nxt
             if(temp1==None):
                 print("None")
-                break
+                break'''
         
 obj=SSL()
 ch=0
